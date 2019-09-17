@@ -1,0 +1,387 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"package contro",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"Confi",
+				"Material Theme: Configuration"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/laragon/www/laracast-demo",
+		"/C/laragon/www/laracast-demo/app",
+		"/C/laragon/www/laracast-demo/app/Http",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers",
+		"/C/laragon/www/laracast-demo/public",
+		"/C/laragon/www/laracast-demo/resources",
+		"/C/laragon/www/laracast-demo/resources/js",
+		"/C/laragon/www/laracast-demo/resources/js/components",
+		"/C/laragon/www/laracast-demo/resources/sass",
+		"/C/laragon/www/laracast-demo/routes"
+	],
+	"file_history":
+	[
+		"/C/laragon/www/laracast-demo/public/css/bulma.0.7.5-min.css",
+		"/C/laragon/www/laracast-demo/resources/views/layouts/app.blade.php",
+		"/C/laragon/www/laracast-demo/node_modules/@vue/component-compiler-utils/node_modules/source-map/dist/source-map.js",
+		"/C/laragon/www/laracast-demo/webpack.mix.js",
+		"/C/laragon/www/laracast-demo/package.json",
+		"/C/laragon/www/laracast-demo/gulpfile.js",
+		"/C/laragon/www/laracast-demo/public/css/bootstrap.4.3.1.min.css",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/create.blade.php",
+		"/C/laragon/www/laracast-demo/routes/web.php",
+		"/C/laragon/www/laracast-demo/app/DatingProfile.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/show.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/home.blade.php",
+		"/C/laragon/www/laracast-demo/public/js/jquery.3.4.1-min.js",
+		"/C/laragon/www/laracast-demo/resources/views/partials/footer.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/partials/nav.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/Auth/LoginController.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/DatingProfilesController.php",
+		"/C/laragon/www/laracast-demo/app/Http/Requests/DatingProfileRequest.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/list.blade.php",
+		"/C/laragon/www/laracast-demo/config/app.php",
+		"/C/laragon/www/laracast-demo/app/Providers/TelescopeServiceProvider.php",
+		"/C/laragon/www/laracast-demo/app/User.php",
+		"/C/laragon/www/laracast-demo/composer.json",
+		"/C/laragon/www/laracast-demo/.env",
+		"/C/laragon/www/laracast-demo/vendor/symfony/http-foundation/Request.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/form.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Middleware/Authenticate.php",
+		"/C/laragon/www/laracast-demo/app/Providers/TabsServiceProvider.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/HomeController.php",
+		"/C/laragon/www/laracast-demo/.editorconfig",
+		"/C/laragon/www/laracast-demo/app/Providers/RouteServiceProvider.php",
+		"/C/laragon/www/laracast-demo/public/index.php",
+		"/C/laragon/www/laracast-demo/config/logging.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/ProfilesController.php",
+		"/C/laragon/www/laracast-demo/app/Http/Requests/ProfileRequest.php",
+		"/C/laragon/www/laracast-demo/database/migrations/migrated/2019_08_29_123800_create_billings_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_08_22_114812_create_profiles_table.php",
+		"/C/laragon/www/laracast-demo/resources/views/partials/tabs.blade.php",
+		"/C/laragon/www/laracast-demo/storage/logs/laravel-2019-08-29.log",
+		"/C/laragon/www/builder/app/Http/Controllers/RoleController.php",
+		"/C/laragon/www/builder/app/Http/Controllers/ProductController.php",
+		"/C/laragon/www/builder/.env",
+		"/C/laragon/www/builder/app/Providers/AppServiceProvider.php",
+		"/C/laragon/www/builder/resources/views/layouts/app.blade.php",
+		"/C/laragon/www/builder/app/User.php",
+		"/C/laragon/www/builder/app/Http/Controllers/UserController.php",
+		"/C/laragon/www/builder/config/app.php",
+		"/C/laragon/www/builder/app/Http/Kernel.php",
+		"/C/laragon/www/builder/resources/views/roles/show.blade.php",
+		"/C/laragon/www/builder/routes/web.php",
+		"/C/laragon/www/builder/gulpfile.js",
+		"/C/laragon/www/builder/resources/views/roles/edit.blade.php",
+		"/C/laragon/www/builder/resources/views/roles/index.blade.php",
+		"/C/laragon/www/builder/resources/views/users/create.blade.php",
+		"/C/laragon/www/builder/resources/views/users/edit.blade.php",
+		"/C/laragon/www/builder/resources/views/users/index.blade.php",
+		"/C/laragon/www/builder/storage/framework/views/303c908791b5f88a2d6903774ceb6a07af4cf1b7.php",
+		"/C/laragon/www/builder/storage/framework/views/564893a43f2aff28ad2bf0c0e64ac1af860e65ec.php",
+		"/C/laragon/www/builder/storage/framework/views/c7b8f98ad860e8b07ecf8c4774ea115da477d383.php",
+		"/C/laragon/www/builder/resources/views/products/create.blade.php",
+		"/C/laragon/www/builder/resources/views/products/edit.blade.php",
+		"/C/laragon/www/builder/resources/views/products/index.blade.php",
+		"/C/laragon/www/builder/resources/views/products/show.blade.php",
+		"/C/laragon/www/builder/resources/views/roles/create.blade.php",
+		"/C/laragon/www/builder/app/Exceptions/Handler.php",
+		"/C/laragon/www/builder/vendor/spatie/laravel-permission/src/Exceptions/UnauthorizedException.php",
+		"/C/laragon/www/builder/vendor/spatie/laravel-permission/src/Middlewares/RoleMiddleware.php",
+		"/C/laragon/www/builder/vendor/spatie/laravel-permission/docs/basic-usage/basic-usage.md",
+		"/C/laragon/www/builder/vendor/spatie/laravel-permission/src/Traits/HasRoles.php",
+		"/C/laragon/www/builder/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php",
+		"/C/laragon/www/builder/vendor/spatie/laravel-permission/src/Models/Role.php",
+		"/C/laragon/www/builder/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/laragon/www/builder/vendor/spatie/laravel-permission/src/Contracts/Role.php",
+		"/C/laragon/www/builder/app/Http/Controllers/Controller.php",
+		"/C/laragon/www/builder/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php",
+		"/C/laragon/www/builder/vendor/laravel/framework/src/Illuminate/Support/Facades/Route.php",
+		"/C/laragon/www/builder/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/C/laragon/www/builder/database/seeds/CreateAdminUserSeeder.php",
+		"/C/laragon/www/builder/database/seeds/PermissionTableSeeder.php",
+		"/C/laragon/www/builder/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/laragon/www/builder/database/migrations/2019_09_04_162936_create_categories_table.php",
+		"/C/laragon/www/builder/app/Design.php",
+		"/C/laragon/www/builder/database/migrations/2019_09_04_123454_create_designs_table.php",
+		"/C/laragon/www/builder/database/migrations/2019_09_04_162737_create_orders_table.php",
+		"/C/laragon/www/builder/database/migrations/2019_09_04_123523_create_products_table.php",
+		"/C/laragon/www/builder/database/migrations/2019_09_04_165152_create_permission_tables.php",
+		"/C/laragon/www/builder/app/Product.php",
+		"/C/laragon/www/builder/composer.json",
+		"/C/laragon/www/builder/package.json",
+		"/C/laragon/www/pricelist/database/migrations/2019_09_03_205101_create_parts_table.php",
+		"/C/laragon/www/pricelist/app/Http/Controllers/PartController.php",
+		"/C/laragon/www/pricelist/resources/views/layouts/app.blade.php",
+		"/C/laragon/www/pricelist/app/Part.php",
+		"/C/laragon/www/pricelist/composer.json",
+		"/C/laragon/www/laracast-demo/resources/views/profiles/form.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/profiles/list.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/Controller.php",
+		"/C/laragon/www/laracast-demo/app/Profile.php",
+		"/C/laragon/www/laracast-demo/resources/views/profiles/create.blade.php",
+		"/C/laragon/www/laracast-demo/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php",
+		"/C/laragon/www/laracast-demo/vendor/laravel/framework/src/Illuminate/Support/Facades/Request.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/laragon/www/laracast-demo/resources/views/auth/register.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/laragon/www/laracast-demo/app/Biling.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_08_29_123800_create_bilings_table.php",
+		"/C/laragon/www/laracast-demo/public/js/app.js",
+		"/C/laragon/www/laracast-demo/database/migrations/mothballed/2019_08_22_114812_create_profiles_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/mothballed/2014_10_12_000000_create_users_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/mothballed/2019_08_22_121944_create_messages_table.php",
+		"/C/laragon/www/laracast-demo/resources/views/errors/list.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/app.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/welcome.blade.php",
+		"/C/laragon/www/laracast-demo/resources/js/app.js",
+		"/C/laragon/www/laracast-demo/resources/views/profiles/edit.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/auth/verify.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/Auth/VerificationController.php",
+		"/C/laragon/www/laracast-demo/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php",
+		"/C/laragon/www/laracast-demo/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/C/laragon/www/laracast-demo/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/GalleriesController.php",
+		"/C/laragon/www/laracast-demo/resources/views/user/register.blade.php",
+		"/C/Users/chris.CUSTOMSIGN/AppData/Roaming/Sublime Text 3/Packages/Material Theme/Material-Theme.sublime-theme",
+		"/C/laragon/www/trivia-web-service/trivia-web-client-vue/src/components/Dashboard.vue",
+		"/C/laragon/www/trivia-web-service/public/js/app.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 173.0,
+		"where_history":
+		[
+			"",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"// webpackBootstrap",
+			"class",
+			"App",
+			"App\\DatingProfile",
+			"prof",
+			"DatingProfileRequest",
+			"public function __construct(array $query = [], array $request = []",
+			"role",
+			"new",
+			"bilings",
+			"spatie",
+			"model_has_roles",
+			"<a class=\"navbar-brand\" href=\"{{ url('/') }}\">\n   22:                     Laravel 5.8 User Roles and Permissions - ItSolutionStuff.com\n   23                  </a>",
+			"ItSolutionStuff.com",
+			"<p class=\"text-center text-primary\"><small>Tutorial by ItSolutionStuff.com</small></p>",
+			" ItSolutionStuff.com",
+			"User have not permission for this page access",
+			"log_level",
+			"getRoleNames",
+			"orderBy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"billings",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 75.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dating app.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gulpfile",
+				"node_modules\\css-loader\\node_modules\\postcss\\gulpfile.js"
+			],
+			[
+				"gulp",
+				"node_modules\\postcss-modules-scope\\node_modules\\postcss\\gulpfile.js"
+			],
+			[
+				"providerrepos",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"ProviderRepository",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"providerrep",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"request.php",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Request.php"
+			],
+			[
+				"Request.php",
+				"vendor\\symfony\\http-foundation\\Request.php"
+			],
+			[
+				"FormReques",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\FormRequest.php"
+			],
+			[
+				"Model",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 490.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

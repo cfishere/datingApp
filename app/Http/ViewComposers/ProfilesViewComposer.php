@@ -1,0 +1,31 @@
+<?php
+namespace App\Http\ViewComposers;
+use Illuminate\View\View;
+
+/**
+ * @param  View  $view
+ * @return void
+ */
+class ProfilesViewComposer
+{
+	
+
+
+
+}
+
+namespace App\Http\View\Composers;
+use Illuminate\View\View;
+class NavigationComposer
+{
+    /**
+     * @param  View  $view
+     * @return void
+     */
+    public function compose(View $view)
+    {
+        $view->with('navigation', [
+            'items1', 'items2', 'item3'
+        ]);
+    }
+}
