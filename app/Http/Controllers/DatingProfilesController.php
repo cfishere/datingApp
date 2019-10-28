@@ -27,28 +27,35 @@ class DatingProfilesController extends Controller
 
     /**
      * Display a listing of the resource.
+     * Filter listing on seeking_gender field.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(DatingProfile $profiles)
+    public function index(DatingProfile $datingProfile)
     {
-        //is this an authenticated user w/ profile
-        //having a preferred gender s/he is seeking?
-      /*  $g;
-        if( Auth::User()->id )
+        $profiles;
+        
+        // Param values expected: "Female" or "Male"
+        // Try to return profiles listing based on current user's
+        // seeking_gender answer, else return non-gendered listing.  
+        if( !is_null( Auth::user() ) )
         {
-           $g =  Profile()->first()
-                ->where( 'user_id', Auth::User()->id )
-                ->seeking_gender;
+            $seeking_gender = Auth::user()->datingProfile->seeking_gender;
+            $profiles = $datingProfile->profilesByGender($seeking_gender);
+            //return view('datingprofiles.list', compact('profiles'));
         }
         else
         {
-            $g=0;
+            //else return a non-gendered listing of all profiles 
+            // TODO: Order these by gender.
+            // redirect to a guest version of the homepage
+            // having limited functionality.
+             $profiles = $datingProfile->all();
+            return view( '/welcome', compact('profiles') );
         }
-*/
-        //$profiles = DatingProfile()->getRegionalProfiles($g);
-       
-        
+
+ //return redirect()->route( 'welcome', compact('profiles') );
+
         return view('datingprofiles.list', compact('profiles'));
     }
 
@@ -58,69 +65,69 @@ class DatingProfilesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        
-        return view('datingprofiles.create');
+    {   
+        //guest users are redirected from this view.
+        $user = Auth::user();
+        $profile;
+        if( $profile = $user->datingProfile()->first() )
+        {
+            // For a route with the following URI: profile/{id}/edit
+
+           //return redirect()->route('profile', ['id' => 1]);
+            return redirect()->route( 'datingprofiles.edit', compact('profile') );
+        }
+        $profile = new DatingProfile;
+        return view( 'datingprofiles.create', compact('profile') );
     }
 
+   
     /**
      * Store a newly created resource in storage.
      *
      * @param  CreateProfileRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( DatingProfileRequest $request )
+    public function store( Request $request )
     {
-       
-        /**
-         * bc Request is type-hinted, Laravel knows to perform 
-         * form validation (within CreateProfileRequest) before 
-         * executing any store method code, below.
-         */        
-
-        /*
-        'dob' => request('dob'),
-        'bio' => request('bio'),
-        'state' => request('state'),
-        'seeking' => request('dob'),
-        'interests' => request('interests'),
-        'values' => request('values'),
-        'likes' => request('likes'),
-        'matches' => request('matches'),
-        'favorites' => request('favorites'),
-        'city' => request('city'),
-        'postalcode' => request('postalcode'),
-        'active' => request('active'),
-        'account' => request('account'),
-        'notes' => request('notes')      
-        */
-
-        $profile = new DatingProfile( $request->all() );
-        //to set the FK user_id fld on Profile,
-        //reference the table relationship betw users/profiles:
-
-        // READS LIKE:
-            //Get Authenticated User's Profile, save new one.
-        Auth::user()->datingProfile()->save( $profile );
         
-        
-        return redirect('datingprofiles/'.Auth::user()->id);
-       // return ['message' => 'Your Profile Has Been Created.!'];
+        //does this user already have a profile, if so,
+        //send them to the edit page for that profile.
+        //else, validate the form data, save new, redirect
+        //to view the newly created profile.
+        //
+    
+        // firstOrNew checks to see if record exists:
+        // i.e,.  Retrieve by field, or instantiate new if not found...
+        // If not found, a new empty model instance is returned 
+        // (which must still be filled with request data & persisted.)
+        // 
+        $profModel = DatingProfile::firstOrNew( [ 'user_id' => Auth::user()->id ] );
+        if( !isset( $profModel->id ) )
+        {     
+            $profModel = new DatingProfile( $request->all() );
+
+            //dating_profile->id will only be set if it retrieved existing profile from DB.            
+            Auth::user()->datingProfile()->save( $profModel );
+
+            //get the newly-generated id to pass to the view:
+            $profModel = Auth::user()->datingProfile();
+           
+            //return view('datingprofiles.edit', compact('profModel') ); 
+        }
+
+        return redirect()->route('datingprofiles.show'); 
     }
     
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  object  $datingprofile
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(DatingProfile $datingprofile)
     {
-        //
-        $datingProfile = new DatingProfile;
-        $profile = DatingProfile::findOrFail($id);
-        return view( 'datingprofiles.show', compact('profile') );
+        return view( 'datingprofiles.show', compact('datingprofile') );        
     }
 
     /**
@@ -131,7 +138,31 @@ class DatingProfilesController extends Controller
      */
     public function edit($id)
     {
+
+        //this should only be the id of the auth::user
+        //on the user_id of dating_profiles table.
+        //Auth middleware already redirects away unauthed users (guests)
+        //but authed users would still access any users profile edit page.
         //
+            
+        //route passes in what is hopefully the dating_profile id,
+        //not the user id.
+        $profile = DatingProfile::where( 'user_id','=', Auth::user()->id )->first();
+
+        if( $profile->id )
+        {
+            $id = $profile->id;
+            return view( 'datingprofiles.edit', compact( 'profile' ) );
+        }
+        else
+        {
+             return redirect()->route( 'datingprofiles.create' );
+        }
+        
+        
+               
+        //return view( 'datingprofiles.edit', compact( 'profile' ) );
+       
     }
 
     /**
@@ -141,15 +172,15 @@ class DatingProfilesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(DatingProfileRequest $request, $id)
+    public function update(Request $request, $id)
     {
 
         //if updated fields validate...
         //track down the profile for this request:
         $profile = DatingProfile::findOrFail($id);
 
-        $profile->update($request->all());
-        return redirect("profiles");
+        $profile->update( $request->all() );
+        return redirect('datingprofiles');
     }
 
     /**
@@ -161,5 +192,27 @@ class DatingProfilesController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    /**
+     * Fetch list of profiles from storage.
+     *
+     * @param string $seeking_gender (Mutated by Model from int)
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function getGenderSpecificProfiles($seeking_gender){
+
+        //Param values expected: "Female" or "Male"
+        //        
+        $seeking_gender = ucfirst(strtolower($seeking_gender));
+
+        $female = "1"; $male = "0";
+        if ( $seeking_gender === "Female" ? $female : $male );
+
+        $profiles = DatingProfile::all()
+            ->where("seeking_gender", "=", $seeking_gender);
+
+        return view('datingprofiles.list', compact('profiles'));
     }
 }

@@ -2,17 +2,19 @@
 @extends('layouts.app')
 
 @section('content')
-{{var_dump($profile)}}
 	
-<h1>Profile for {{ $profile->user->name }} {{ $profile->user->lname }}</h1>
+<h1>Profile for {{ $datingprofile->user->name }} {{ $datingprofile->user->lname }}</h1>
 	<hr>
 
 	<ul>
-		<li>BIO: {{ $profile->bio }}</li>
-		<li>GENDER: {{ $profile->gender }}</li>
-		<li>SEEKING: {{ $profile->seeking_gender }}</li>
-		<li>DOB: {{ $profile->dob }}</li>
+		<li>BIO: {{ $datingprofile->bio }}</li>
+		<li>GENDER: {{ $datingprofile->gender }}</li>
+		<li>SEEKING: {{ $datingprofile->seeking_gender }}</li>
+		<li>DOB: {{ $datingprofile->dob }}</li>
 	</ul>
+	@if( $datingprofile->user_id === Auth::user()->id )
+		<a href="{{ $datingprofile->id }}/edit">Edit</a>
+	@endif
 @endsection
 
 @section('footer')

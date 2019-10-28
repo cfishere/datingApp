@@ -11,6 +11,6 @@ class ProfileTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $faker->lastName
     }
 }

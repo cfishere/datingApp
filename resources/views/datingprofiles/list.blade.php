@@ -1,12 +1,21 @@
+@extends('layouts\app')
+ @section('title')
+ View Member Profiles
+ @stop
+ @section('content')
 @if (count($profiles))
-	<h1 class="title is-3">View Profiles Listing</h1>
-
-	<ul>
-		@foreach $profiles as profile
+	<h1 class="title is-3">View Member Profiles</h1>
+@if (session('error'))
+	<div class="alert alert-danger">{{ session('error') }}</div>
+	@include('errors.list')
+@else
+	<ul>	
+		@foreach ($profiles as $profile)
 			<li>
-				Memeber is located in state: <a href="#">{{ $profile->state }}</a>
+				
+				
 				<br>
-				<span>NAME: {{ profile()->user()->name }} DOB: {{ $profile->dob }}</span>
+				<span>NAME: {{ $profile->user->name }} DOB: {{ $profile->dob }}</span>
 				<br>
 				<span>-- Gender: {{ $profile->gender }}</span>
 				<br>
@@ -14,6 +23,10 @@
 			</li>
 		@endforeach
 	</ul>
+	
+	@endif
 
-	<hr>
 @endif
+@stop 
+        
+

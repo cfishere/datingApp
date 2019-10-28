@@ -17,6 +17,7 @@ return [
     */
 
     'driver' => env('MAIL_DRIVER', 'smtp'),
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -54,10 +55,14 @@ return [
     | used globally for all e-mails that are sent by your application.
     |
     */
+   'to' => [
+    'address' => 'chris@customsigncenter.com',
+    'name' => 'Example'
+    ],
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'chris@customsigncenter.com'),
+        'name' => env('MAIL_FROM_NAME', 'Chris'),
     ],
 
     /*
@@ -84,9 +89,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('chris@customsigncenter.com'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('WE*@we82'),
 
     /*
     |--------------------------------------------------------------------------

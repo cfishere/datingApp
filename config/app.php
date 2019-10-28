@@ -177,7 +177,7 @@ return [
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ProfilesViewComposerProvider::class,
-        //App\Http\Requests\DatingProfileRequest::class,
+        
         //App\Providers\TabsServiceProvider::class,
 
     ],

@@ -16,7 +16,7 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'fname', 'lname', 'mname',
+        'name', 'lname', 'mname',
         'secret', 'email', 'password',
     ];
 
@@ -32,11 +32,17 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
 
     public function datingProfile()
     {
-        return $this->hasOne('\App\DatingProfile');
+        return $this->hasOne('App\DatingProfile');
     }
 
     public function billing()
     {
-        return $this->hasOne('\App\Billing');
+        return $this->hasOne('App\Billing');
+    }
+
+    public function fullName()
+    {
+        $m = ( empty($this->mname) ? " " : " ".$this->mname." ");
+        return $this->name .$m. $this->lname;
     }
 }

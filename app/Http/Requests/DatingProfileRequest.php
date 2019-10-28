@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+//use App\DatingProfile;
+//use Auth;
 
 class DatingProfileRequest extends FormRequest
 {
@@ -12,8 +14,8 @@ class DatingProfileRequest extends FormRequest
      * @return bool
      */
     public function authorize()
-    {       
-            return true;       
+    {
+        return true;
     }
 
     /**
@@ -23,14 +25,7 @@ class DatingProfileRequest extends FormRequest
      */
     public function rules()
     {
-        return [             
-            'bio' => 'required|min:200',
-            'state' => 'required|alpha|min:2',
-            'city' => 'required',
-            'postalcode' => 'required',
-            'gender' => 'required',
-            'seeking_gender' => 'required',
-        ];
+        return ['bio' => 'required'];
     }
 
      /**
@@ -40,6 +35,7 @@ class DatingProfileRequest extends FormRequest
      */
     public function messages()
     {
+        /*
         return [
             'bio.required' => 'Bio is required',
             'state.required' => 'State is required',
@@ -48,5 +44,6 @@ class DatingProfileRequest extends FormRequest
             'gender.required' => 'Gender is required',
             'seeking_gender.requred' => 'Gender you are searching for is required',
         ];
+        */
     }
 }

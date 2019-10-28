@@ -9,6 +9,11 @@ use Illuminate\View\View;
 class ProfilesViewComposer
 {
 	
+	public function compose( View $view)
+	{
+		$view->with('profiles', [])
+
+	}
 
 
 

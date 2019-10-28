@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-    </head>
-    <body>
+<@extends('layouts\app')
+ @section('title')
+ View Member Profiles
+ @stop
+ @section('content')
+        <h1>Look Around</h1>
+        <p>This is the view of the welcome page for a user who is in a guest role.<br/>They will have limited access to profiles.</p>
          <div id="app">
             <ul>
+                {{dump($profiles)}}
                
             </ul>
              
@@ -20,3 +18,4 @@
          <script src="/js/app.js"></script>
      </body> 
 </html>
+@stop
