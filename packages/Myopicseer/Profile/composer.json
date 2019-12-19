@@ -1,0 +1,43 @@
+{
+    "name": "myopicseer/profile",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Nichols",
+            "email": "chrisnicholsinbox@outlook.com",
+            "homepage": "none"
+        }
+    ],
+    "homepage": "https://github.com/myopicseer/profile",
+    "keywords": ["Laravel", "Profile"],
+    "require": {
+        "illuminate/support": "~5|~6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Myopicseer\\Profile\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Myopicseer\\Profile\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Myopicseer\\Profile\\ProfileServiceProvider"
+            ],
+            "aliases": {
+                "Profile": "Myopicseer\\Profile\\Facades\\Profile"
+            }
+        }
+    }
+}

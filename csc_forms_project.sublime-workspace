@@ -1,0 +1,572 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Laravel make:m",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"Laravel ",
+				"Laravel Artisan 5: Make:Event"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Re",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"package contro",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"Confi",
+				"Material Theme: Configuration"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 246.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/laragon/www/gantt-lar6",
+		"/C/laragon/www/gantt-lar6/app",
+		"/C/laragon/www/gantt-lar6/app/Http",
+		"/C/laragon/www/gantt-lar6/app/Http/Controllers",
+		"/C/laragon/www/gantt-lar6/app/Mail",
+		"/C/laragon/www/gantt-lar6/config",
+		"/C/laragon/www/gantt-lar6/resources",
+		"/C/laragon/www/gantt-lar6/resources/views",
+		"/C/laragon/www/gantt-lar6/resources/views/forms",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro"
+	],
+	"file_history":
+	[
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro.blade.php",
+		"/C/laragon/www/gantt-lar6/app/Http/Controllers/DataManagerController.php",
+		"/C/laragon/www/gantt-lar6/vendor/laravel/framework/src/Illuminate/Mail/Mailable.php",
+		"/C/laragon/www/gantt-lar6/app/Mail/TestEmail.php",
+		"/C/laragon/www/gantt-lar6/vendor/laravel/framework/src/Illuminate/Support/Facades/Mail.php",
+		"/C/laragon/www/gantt-lar6/vendor/laravel/framework/src/Illuminate/Support/Testing/Fakes/MailFake.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/measurements.blade.php",
+		"/C/laragon/www/gantt-lar6/config/filesystems.php",
+		"/C/laragon/www/gantt-lar6/config/app.php",
+		"/C/laragon/www/gantt-lar6/app/Http/Controllers/MonroFormController.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/afterEmail.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/notes.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/pdf.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/tests/sendEmailTest.blade.php",
+		"/C/laragon/www/gantt-lar6/routes/web.php",
+		"/C/laragon/www/gantt-lar6/config/mail.php",
+		"/C/laragon/www/gantt-lar6/app/Http/Controllers/EmailController.php",
+		"/C/laragon/www/gantt-lar6/.env-inmotion",
+		"/C/Users/chris.CUSTOMSIGN/AppData/Roaming/Sublime Text 3/Packages/User/sftp_servers/yoursign.company",
+		"/C/laragon/www/gantt-lar6/resources/views/tests/send_email_test.blade.php",
+		"/C/laragon/www/gantt-lar6/.env",
+		"/C/laragon/www/gantt-lar6/resources/views/home.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/list.blade.php",
+		"/C/laragon/www/gantt-lar6/test.html",
+		"/C/laragon/www/gantt-lar6/resources/views/emails/monro/sendform.blade.php",
+		"/C/laragon/www/gantt-lar6/app/Mail/FormSubmissionEmail.php",
+		"/C/laragon/www/gantt-lar6/app/Monro.php",
+		"/C/laragon/www/gantt-lar6/config/hashing.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/photos.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/jobinfo.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/partials/footer.blade.php",
+		"/C/laragon/www/gantt-lar6/routes/api.php",
+		"/C/laragon/www/gantt-lar6/public/data/monro.csv",
+		"/C/laragon/www/gantt-lar6/resources/css/app.css",
+		"/C/laragon/www/gantt-lar6/resources/css/custom.css",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/email.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/emails/monro/send.blade.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/monro/submitted.blade.php",
+		"/C/laragon/www/gantt-lar6/public/js/monro.js",
+		"/C/laragon/www/gantt-lar6/database/migrated/2019_11_21_134533_create_monros_table.php",
+		"/C/laragon/www/gantt-lar6/database/migrations/2019_11_21_134533_create_monros_table.php",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/app.blade.php",
+		"/C/laragon/www/gantt-lar6/app/Http/Helpers/Monro_emailbody.php",
+		"/C/laragon/www/gantt-lar6/webpack.mix.js",
+		"/C/laragon/www/gantt-lar6/resources/sass/app.scss",
+		"/C/laragon/www/gantt-lar6/public/js/app.js",
+		"/C/laragon/www/gantt-lar6/resources/js/app.js",
+		"/C/laragon/www/gantt-lar6/resources/js/monro.js",
+		"/C/laragon/www/gantt-lar6/resources/css/bulma.0.7.5.min.css",
+		"/C/laragon/www/gantt-lar6/public/css/app.css",
+		"/C/laragon/www/gantt-lar6/resources/sass/bulma.0.7.5.min.css",
+		"/C/laragon/www/gantt-lar6/resources/js/font-awesome.min.js",
+		"/C/laragon/www/gantt-lar6/package.json",
+		"/C/laragon/www/gantt-lar6/resources/css/select2.min.css",
+		"/C/laragon/www/gantt-lar6/resources/js/select2.min.js",
+		"/C/laragon/www/gantt-lar6/resources/js/jquery.3.4.1.min.js",
+		"/C/laragon/www/gantt-lar6/resources/views/forms/__measurements.blade.php",
+		"/C/laragon/www/laracast-demo/composer.json",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/list.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/welcome.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/Tag.php",
+		"/C/laragon/www/laracast-demo/app/ProfileTag.php",
+		"/C/laragon/www/laracast-demo/routes/web.php",
+		"/C/laragon/www/laracast-demo/app/DatingProfile.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/DatingProfileController.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/listbytag.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/show.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/UserController.php",
+		"/C/laragon/www/laracast-demo/app/Http/Requests/StoreUserData.php",
+		"/C/laragon/www/laracast-demo/resources/views/notfound.blade.php",
+		"/C/laragon/www/laracast-demo/config/app.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/form.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/user/edit.blade.php",
+		"/C/laragon/www/laracast-demo/app/Gallery.php",
+		"/C/laragon/www/laracast-demo/resources/views/auth/edit.blade.php",
+		"/C/laragon/www/laracast-demo/app/initializeAppendAttributeTrait.php",
+		"/C/laragon/www/laracast-demo/resources/js/app.js",
+		"/C/laragon/www/laracast-demo/package.json",
+		"/C/laragon/www/laracast-demo/webpack.mix.js",
+		"/C/laragon/www/laracast-demo/public/css/app.css",
+		"/C/laragon/www/laracast-demo/resources/sass/app.scss",
+		"/C/laragon/www/laracast-demo/resources/views/layouts/app.blade.php",
+		"/C/laragon/www/laracast-demo/public/css/README.md",
+		"/C/laragon/www/laracast-demo/app/Tag.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_11_04_150915_create_dating_profile_tag_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_11_04_141503_create_tag_categories_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_11_04_150915_create_dating_profile_tags_table.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/MessageController.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/ThreadController.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_11_04_141123_create_tags_table.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/GalleryController.php",
+		"/C/laragon/www/laracast-demo/database/migrations/2019_09_23_191555_createstatestable.php",
+		"/C/laragon/www/laracast-demo/resources/views/profiles/male.blade.php",
+		"/C/laragon/www/laracast-demo/packages/Myopicseer/Profile/src/Profile.php",
+		"/C/laragon/www/laracast-demo/app/Http/Profiles/Males.php",
+		"/C/laragon/www/laracast-demo/packages/Myopicseer/Profile/composer.json",
+		"/C/laragon/www/laracast-demo/packages/Myopicseer/Profile/config/profile.php",
+		"/C/laragon/www/laracast-demo/resources/views/profiles/Profiles.php",
+		"/C/laragon/www/laracast-demo/app/Http/Profiles/Females.php",
+		"/C/laragon/www/laracast-demo/resources/views/partials/nav.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/DatingProfilesController.php",
+		"/C/laragon/www/laracast-demo/public/js/app.js",
+		"/C/laragon/www/laracast-demo/public/js/bootstrap.min.js",
+		"/C/laragon/www/laracast-demo/public/css/bulma.0.7.5-min.css",
+		"/C/laragon/www/laracast-demo/app/User.php",
+		"/C/laragon/www/laracast-demo/database/factories/UserFactory.php",
+		"/C/laragon/www/laracast-demo/time.php",
+		"/C/laragon/www/laracast-demo/.gitignore",
+		"/C/laragon/www/laracast-demo/app/Http/Requests/DatingProfileRequest.php",
+		"/C/laragon/www/laracast-demo/database/seeds/UserTableSeeder.php",
+		"/C/laragon/www/laracast-demo/database/factories/ModelFactory.php",
+		"/C/laragon/www/laracast-demo/server.php",
+		"/C/laragon/www/laracast-demo/tests/Feature/GenderProfilesTest.php",
+		"/C/laragon/www/laracast-demo/database/seeds/ProfileTableSeeder.php",
+		"/C/laragon/www/laracast-demo/resources/views/forms/partials/values.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/create.blade.php",
+		"/C/laragon/www/laracast-demo/resources/views/datingprofiles/edit.blade.php",
+		"/C/laragon/www/laracast-demo/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/laragon/www/laracast-demo/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
+		"/C/laragon/www/laracast-demo/app/State.php",
+		"/C/laragon/www/laracast-demo/node_modules/laravel-mix/src/components/Vue.js",
+		"/C/laragon/www/laracast-demo/.env",
+		"/C/laragon/www/laracast-demo/app/Country.php",
+		"/C/laragon/www/laracast-demo/database/migrations/migrated/2019_08_22_180732_create_countries_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/migrated/2019_08_22_114812_create_dating_profiles_table.php",
+		"/C/laragon/www/laracast-demo/database/migrations/migrated/REPLACEDBYSTATETABLE_2019_08_22_180624_create_regions_table.php",
+		"/C/laragon/www/laracast-demo/database/seeds/CountriesTableSeeder.php",
+		"/C/laragon/www/laracast-demo/database/migrations/migrated/2019_08_22_114812_create_profiles_table.php"
+	],
+	"find":
+	{
+		"height": 74.0
+	},
+	"find_in_files":
+	{
+		"height": 173.0,
+		"where_history":
+		[
+			"<current file>",
+			"<current file>,C:\\laragon\\www\\gantt-lar6",
+			"<current file>",
+			"C:\\laragon\\www\\gantt-lar6\\database\\migrations",
+			"<current file>",
+			"$profile-",
+			"<current file>,C:\\laragon\\www\\laracast-demo",
+			"<current file>",
+			"C:\\laragon\\www\\laracast-demo\\vendor\\tcg\\voyager",
+			"",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"slash",
+			"html",
+			"dd(",
+			"dataArray",
+			"DataManage",
+			"buildAttachments",
+			"attach",
+			"use File;\n\nZipArchive",
+			"columns",
+			"foreach",
+			"mail:",
+			"sendEmail",
+			"mail:",
+			"pdfSave",
+			"monro/",
+			"submiss",
+			"pdfSave",
+			"pdfPrepare",
+			"pdfSave",
+			"$data",
+			"store",
+			"config()->set",
+			"div",
+			"max-height",
+			"style=\"max-height:300px\"",
+			"is-3by4",
+			" is-3by4",
+			"style=\"max-width:380px; max-heigh: 380px; margin: 15px; display:block\"style=\"max-width:380px; max-heigh: 380px; margin: 15px; display:block\"",
+			"auto",
+			"section",
+			"<div class=\"container has-text-centered\">",
+			"</figure>",
+			"<figure class=\"image\"> ",
+			" is-4by3",
+			"▶",
+			" & ▶",
+			"&#13;",
+			"download",
+			"output",
+			"download",
+			"pdfPrepare",
+			"$pdf = PDF::loadView('forms.monro.pdf', compac",
+			"return $file;",
+			"             return $file;",
+			" if( $this->pdfSave( $file, $pdf )\n\n        {\n\n            return $file;",
+			"$doc['measurements']",
+			"pdfPrepare",
+			"pdfSave",
+			"$doc['measurements']",
+			"pdf",
+			"downloadPDF",
+			"savePdf",
+			"sendEmail",
+			"mail",
+			"$job",
+			"autoFillJobFields",
+			"Enter the Store Number Above.",
+			"token",
+			"images",
+			"Main_Storefront_Fascia_Imag",
+			">download",
+			"images",
+			"storage",
+			"store",
+			"Submitte",
+			"'.$",
+			"']}}</",
+			"->save",
+			"$monroModel",
+			"$data",
+			"$this->save",
+			"attribute",
+			"$savedImages",
+			"$data",
+			"imageName",
+			"request()->image",
+			"CreateEmailBody",
+			">\n",
+			"<input",
+			"<button",
+			"<button class=\"is-active has-background-success has-text-white\"",
+			"<button class=\"is-active has-background-success\"",
+			"<button class=\"is-active\"",
+			"showHide",
+			"showHi",
+			"fascia",
+			"is-pulled-right",
+			"hide",
+			"is-hidden",
+			"is-3",
+			"is-3 ",
+			"is-3",
+			"bulma",
+			"mix",
+			"Facade",
+			"fascia_elevation",
+			"height_",
+			"width_",
+			"Add Elevation",
+			"Ckbx",
+			"_id",
+			"tag",
+			"imgs",
+			"gallery",
+			"galler",
+			"DatingProfileRequest",
+			"store",
+			"\t    \t\n",
+			"<a",
+			"pagination",
+			");\n",
+			"id",
+			"[0]",
+			"id",
+			"[0]'",
+			"$profile[",
+			"$profile[0]",
+			"[0]",
+			"$profile[0]['",
+			"$profile->",
+			"$prof-",
+			"show",
+			"pull",
+			"card",
+			"pad",
+			"messages",
+			"Threads",
+			"Toggle navigation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$monro",
+			"<div class=\"hero\">\n  <div class=\"hero-body\">\n",
+			"<div class=\"hero\">\n  <div class=\"hero-body\">\n    <div class=\"container has-text-centered\">",
+			"",
+			"<input class=\"input is-hovered\" ",
+			"<button type=\"button\" ",
+			"<button class=\"is-active has-background-success has-text-white button\"",
+			"<button class=\"is-active has-background-success has-text-white\"",
+			"<button class=\"is-active has-background-success\"",
+			"toggleDisplay",
+			"hide",
+			"Fascia",
+			"Fascia_Elevation",
+			"Height_",
+			"Width_",
+			"Add Another Elevation Field",
+			"CB",
+			"",
+			"[0]['",
+			"$profile[0]",
+			"$profile",
+			"$profile[0]['",
+			"$profile-",
+			"strtolower",
+			"1]",
+			"['name",
+			", 'country_id' => 1)],",
+			", 'abbr' => '",
+			"'name' => ",
+			"$table->string(",
+			"billings",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 335.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 192.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 186.0
+	},
+	"pinned_build_system": "",
+	"project": "csc_forms_project.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Gender",
+				"tests\\Feature\\GenderProfilesTest.php"
+			],
+			[
+				"vue.js",
+				"node_modules\\laravel-mix\\src\\components\\Vue.js"
+			],
+			[
+				"gulpfile",
+				"node_modules\\css-loader\\node_modules\\postcss\\gulpfile.js"
+			],
+			[
+				"gulp",
+				"node_modules\\postcss-modules-scope\\node_modules\\postcss\\gulpfile.js"
+			],
+			[
+				"providerrepos",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"ProviderRepository",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"providerrep",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php"
+			],
+			[
+				"request.php",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Request.php"
+			],
+			[
+				"Request.php",
+				"vendor\\symfony\\http-foundation\\Request.php"
+			],
+			[
+				"FormReques",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\FormRequest.php"
+			],
+			[
+				"Model",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 697.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

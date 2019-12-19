@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-//use App\DatingProfile;
+use \App\DatingProfile;
 //use Auth;
 
 class DatingProfileRequest extends FormRequest

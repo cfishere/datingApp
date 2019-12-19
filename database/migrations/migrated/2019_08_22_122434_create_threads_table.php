@@ -16,9 +16,14 @@ class CreateThreadsTable extends Migration
         Schema::create('threads', function (Blueprint $table) {
             $table->bigIncrements('id'); 
             //content JSON:
-            //{0:{msg:,date:,read:,replied;from:,to:,subj:, deleted:{0:userid, 1:userid}},1:{...}}            
-            $table->json('content');      
-            $table->timestamps();
+            /*
+            json of all messages sent, received, having the ids of the parties as receiver and sender.  
+            {0:{'from':'2' 'to':'14', 'subj':'blah', 'content':'foobar', 'status':'set to bool true once read by recipient'}, 1:{'from':'14' 'to':'2', 'subj':'re: blah', 'content':'barfoo', 'status':'set to bool true once read by recipient'}, etc}   
+             */            
+            $table->json('content');
+            //user.id of last person to access this thread
+            $table->integer('accessed_by')->unsigned()->nullabe();
+            $table->datetime('accessed_at');
         });
     }
 

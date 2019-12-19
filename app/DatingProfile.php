@@ -5,16 +5,21 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 //use Laravel\Scout\Searchable;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
+
 
 class DatingProfile extends Model
 {
-	//use Searchable;
-
+	//use Searchable;	
 
 	protected $fillable = [
-		'dob','state','country','city','postalcode','gender','seeking_gender','seeking_desc','interests','values','likes','matches','favorites','appearance','bio',
+		'dob','state','country','city','postalcode','gender','seeking_gender','seeking_desc','interests','values', 'gallery', 'likes','matches','favorites','appearance','bio',
 	];
-		
+	//protected $cast = ['gallery'=>'array'];
+
+	//allow a custom attribute for convenience method to get name+lname
+	protected $appends = ['fullname'];
+	
 
 	 /**
      * Get the index name for the model.
@@ -27,10 +32,18 @@ class DatingProfile extends Model
     {
         return 'dating_profiles_index';
     }
-*/
+	*/
+
+
+	public function tag()
+	{
+		return $this->belongsToMany(Tag::class, 'dating_profile_tag', 'dating_profile_id', 'tag_id' );
+	}
+
+
 	public function user()
 	{
-		return $this->belongsTo('App\User', 'user_id');
+		return $this->belongsTo('App\User');
 	}
 
 
@@ -39,25 +52,34 @@ class DatingProfile extends Model
 		return $this->belongsTo('App\State');
 	}
 	
+
+	/**
+	 * Get the user's full name.
+	 *
+	 * @return string
+	 */
+	public function getFullnameAttribute( )
+	{
+		return "{$this->user->name} {$this->user->lname}";
+	}
+	
+	
 	/** 
 	 * 
-	 * @param string $gender (gender field accessor converts to a string)
+	 * @param string $gender ('transform gender attrib from str to int')
 	 * @return Model Collection
 	 */
 	public function profilesByGender( $gender )
-	{
-		//Accessor should convert gender from str to int on queries(?)
-		$gender = $this->setSeekingGenderAttribute( $gender );	
-		return $this->where('gender', '=', $gender)->get();
-		
+	{			
+		$seekingType = ( strtolower( substr($gender,0,1) ) === 'f' ? 0 : 1 );		
+		return $this::with('user')->where( 'gender', '=', $seekingType )->paginate(10)->all();		
 	}
-
 
 
 	/* Mutator date to timestamp for storage */
 	public function setDobAttribute($dob){
 		//$date = Carbon::parse($dob);
-		$this->attributes['dob'] = Carbon::parse($dob)->format('Y-m-d');
+		return $this->attributes['dob'] = Carbon::parse($dob)->format('Y-m-d');
 	}
 	
 
@@ -82,14 +104,14 @@ class DatingProfile extends Model
 		
 		if( $seeking_gender === 0 )
 		{
-			return $this->attributes['gender'] = 'Male';
+			return $this->attributes['seeking_gender'] = 'Male';
 		} 
 		elseif( $seeking_gender === 1 )
 		{
-			return $this->attributes['gender'] = 'Female';
+			return $this->attributes['seeking_gender'] = 'Female';
 		} 
 		//if null
-		return $this->attributes['gender'] = '';				
+		return $this->attributes['seeking_gender'] = 'Unknown';				
 	}   
 
 
@@ -108,18 +130,18 @@ class DatingProfile extends Model
 	}
 
 
-	/** Mutator Field gender
-	*	
+	/** 
+	*	Mutator Field gender
 	*	@param int ( 0 || 1)
 	*   @return string (Male || Female)    
 	*/
 	public function setGenderAttribute( $gender ){		
 		
-		if( $gender === 'Male' )
+		if( strtolower(str::limit($gender, 1)) === 'm' )
 		{
 			return $this->attributes['gender'] = 0;
 		} 
-		elseif( $gender === 'Female' )
+		else
 		{
 			return $this->attributes['gender'] = 1;
 		} 
@@ -127,22 +149,66 @@ class DatingProfile extends Model
 	}
 
 
-	/** Mutator Field seeking_gender
-	*	
+	/** 
+	*	Mutator Field seeking_gender
 	*	@param int ( 0 || 1)
 	*   @return string (Male || Female)    
 	*/
 	public function setSeekingGenderAttribute( $seeking_gender ){		
 		
-		if( $seeking_gender === 'Male' )
+		if( strtolower(str::limit($seeking_gender)) === 'm' )
 		{
 			return $this->attributes['seeking_gender'] = 0;
 		} 
-		elseif( $seeking_gender === 'Female' )
+		else
 		{
 			return $this->attributes['seeking_gender'] = 1;
 		} 
 		// This is a required field.			
+	}
+
+
+	/**
+	 * Gallery Field Mutator
+	 * @param array
+	 *
+	 * @return str JSON
+	 */
+	public function setGalleryAttribute($gallery){	
+		 $properties = [];
+
+	    foreach ($gallery as $array_item) {
+	        if (!is_null($array_item['key'])) {
+	            $properties[] = $array_item;
+	        }
+	    }
+
+    	$this->attributes['gallery'] = json_encode($properties);
+
+	}
+
+
+	/**
+	 * Relies on pivot table 'dating_profile_tag' 
+	 * @param  int $id. id of record in tags table.
+	 * @return Collection of Profiles sharing tags.id
+	 
+	public function getProfilesByTag($id)
+	{
+		 $this->with('datingprofiles')->where('id', '=', $id)->get();
+
+	}
+*/
+
+	/**
+	 * Gallery Field Accessor
+	 * @param str JSON
+	 *
+	 * @return array
+	 */
+	public function getGalleryAttribute($gallery)
+	{
+		return json_decode($gallery, true);
 	}
    
 }
