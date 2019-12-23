@@ -24,3 +24,25 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => Str::random(10),	      
     ];
 });
+
+
+
+$factory->define(App\Thread::class, function (Faker\Generator $faker) {
+
+	//form,to,subj,body,status
+    return [       
+    	'content' => json_encode([ 
+    		'to' => Factory('App/User')->create()->id,
+    		'from'  => Factory('App/User')->create()->id,
+    		'subj' => $faker->sentence,
+        	'body' => $faker->lastName,
+        	'status' => 2])     	      
+    ];
+});
+$factory->define(App\Message::class, function (Faker\Generator $faker) {
+	//form,to,subj,body,status
+    return [       
+    	'thread_id' => Factory('App/Thread')->create()->id,
+    	'user_id' => Factory('App/User')->create()->id
+    ];
+});

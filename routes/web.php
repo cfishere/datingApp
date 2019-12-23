@@ -19,7 +19,8 @@ Route::get('datingprofiles/tag/{id}', 'DatingProfilesController@listProfilesForT
 
 //profile
 Route::resource('datingprofiles', 'DatingProfilesController');
-Route::resource('messages', 'MessageController');
+//Route::resource('messages', 'MessageController');
+Route::resource('messages.threads', 'ThreadController@index');
 
 //view gender-specific profiles
 //Route::resource('datingprofiles/{$seeking_gender}', 'DatingProfilesController@getGenderSpecificProfiles');

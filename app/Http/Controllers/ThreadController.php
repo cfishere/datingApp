@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+user App\Thread;
 
 class ThreadController extends Controller
 {
@@ -13,7 +14,8 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        //
+        $threads = Thread::latest()->get();
+        return view('messages.threads', compact('threads'));
     }
 
     /**

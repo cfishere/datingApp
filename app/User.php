@@ -35,6 +35,11 @@ class User extends \TCG\Voyager\Models\User implements MustVerifyEmail
         return $this->hasOne('App\DatingProfile');
     }
 
+    public function message()
+    {
+        $this->hasMany('App\Message');
+    }
+
     public function billing()
     {
         return $this->hasOne('App\Billing');

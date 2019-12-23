@@ -14,4 +14,9 @@ class Message extends Model
     	return $this->hasOne('App\Thread', 'thread_id');
     }
 
+    public function user()
+    {
+    	return $this->belongsTo('App\User', 'user_id');
+    }
+
 }

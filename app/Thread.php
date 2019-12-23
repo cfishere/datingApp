@@ -9,7 +9,7 @@ class Thread extends Model
     //
     public function message()
     {
-    	return $this->belongsTo('App\Message')
+    	return $this->belongsTo('App\Message');
     }
 
     /**
