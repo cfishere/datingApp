@@ -58,9 +58,11 @@ class DatingProfile extends Model
 	 *
 	 * @return string
 	 */
+	
 	public function getFullnameAttribute( )
 	{
-		return "{$this->user->name} {$this->user->lname}";
+
+		//return "{$this->user->name} {$this->user->lname}";
 	}
 	
 	

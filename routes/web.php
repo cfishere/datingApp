@@ -11,8 +11,13 @@ Route::get('myopicseerpackage', function(){
 	return view('profiles/male');
 });
 
+// TESTING routes:
+/*Route::get('search/datingprofiles/postalcode/{postalcode}/{radialMiles}', 'PostalcodeController@index' );
+*/
+// END TESTING routes.
 
-
+Route::get('postalcodes/index', 'PostalcodeController@index' );
+Route::get('postalcodes/q/{radius}', 'PostalcodeController@searchInRadialMiles');
 //show profiles having tag id of {id}
 Route::get('datingprofiles/tag/{id}', 'DatingProfilesController@listProfilesForTag');
 

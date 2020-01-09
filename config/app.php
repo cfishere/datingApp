@@ -178,6 +178,7 @@ return [
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ProfilesViewComposerProvider::class,
+        App\Providers\PostalcodeServiceProvider::class,
         
         //App\Providers\TabsServiceProvider::class,
 

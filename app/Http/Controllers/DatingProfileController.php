@@ -6,6 +6,7 @@ use Auth;
 use App\DatingProfile;
 use App\Tag;
 use Illuminate\Http\Request;
+use App\State;
 //use App\Http\Requests\DatingProfileRequest;
 
 class DatingProfilesController extends Controller
@@ -81,14 +82,24 @@ class DatingProfilesController extends Controller
         //guest users are redirected from this view.
         $user = Auth::user();
         $profile;
+
+        //we need the states fields from the DB to populate options of form's Select List
+        //
+        //
+        $states = State::all(['id', 'name'])->pluck('name', 'id');
+
         if( $profile = $user->datingProfile()->first() )
         {
             // For a route with the following URI: profile/{id}/edit
 
            //return redirect()->route('profile', ['id' => 1]);
+            $profile->push($states);
             return redirect()->route( 'datingprofiles.edit', compact('profile') );
         }
-        $profile = new DatingProfile;
+
+        $profile = new DatingProfile;        
+        $profile->push($states);       
+        //dd($profile);
         return view( 'datingprofiles.create', compact('profile') );
     }
 
